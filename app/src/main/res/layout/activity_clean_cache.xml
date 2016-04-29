@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.mymobile.activity.CleanCacheActivity">
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:text="缓存清理"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:background="#8866ff00"
+        android:gravity="center_vertical" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="全部清理"
+        android:onClick="cleanAll"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView
+        android:text="扫描状态"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:id="@+id/tv_status"/>
+    <ProgressBar
+        android:layout_marginTop="10dp"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:progressDrawable="@drawable/progress_horizontal"
+        android:id="@+id/progressbar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/ll_contaner">
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

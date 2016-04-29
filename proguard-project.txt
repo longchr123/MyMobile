@@ -1,0 +1,73 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+-dontpreverify
+-verbose
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+#/*------------------------------需要修改的地方-------------------------------*/
+#/*以下libraryjars。。。。为消除第三方的包被混淆*/
+-libraryjars libs/androidpn-client.jar
+-libraryjars ../Libcommon/libs/android-support-v4.jar
+#/*------------------------------需要修改的地方，这部分要根据自己的项目修改-------------------------------*/
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+#/*------------------------------需要修改的地方-------------------------------*/
+#/*以下这一句为消除v4包被混淆*/
+-keep class android.support.v4.** { *; }
+
+#/*以下libraryjars。。。。为消除第三方的包被混淆，在相应的jar包下的包名*/
+-dontwarn org.androidpn.client.**
+-dontwarn com.j256.ormlite.**
+-dontwarn com.novell.sasl.**
+-dontwarn de.measite.**
+#/*------------------------------需要修改的地方-------------------------------*/

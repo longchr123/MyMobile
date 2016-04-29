@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.AdvancedTools.CommonNumberQueryActivity">
+
+    <TextView android:text="常用号码查询"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:background="#8866ff00"
+        android:gravity="center" />
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/elv"></ExpandableListView>
+
+</LinearLayout>

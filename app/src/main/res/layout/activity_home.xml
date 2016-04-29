@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.mymobile.activity.HomeActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:text="功能列表"
+        android:textColor="#000000"
+        android:textSize="28sp" />
+
+    <com.example.administrator.mymobile.FocusedTextView
+        android:id="@+id/tv_self"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="不为模糊不清的未来担忧，只为清清楚楚的现在努力"
+        android:textSize="20sp"
+        android:textColor="#bd5b5bb6"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tv_self"
+        android:layout_marginTop="10dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:singleLine="true"
+        android:text="耐得住寂寞才能守得住繁华，该奋斗的年龄不要选择安逸"
+        android:textSize="20sp"
+        android:textColor="#bd5b5bb6"/>
+
+    <GridView
+        android:id="@+id/list_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tv"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:numColumns="2"
+        android:verticalSpacing="20dp"></GridView>
+
+</RelativeLayout>

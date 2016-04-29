@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:itheima="http://schemas.android.com/apk/res/com.example.administrator.mymobile"
+    android:orientation="vertical">
+
+    <TextView android:text="2.手机卡绑定:"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:id="@+id/tv"/>
+
+    <TextView
+        android:text="通过绑定SIM卡：\n 下次重启手机如果发现SIM变化 \n 就会发送报警短信"
+        style="@style/text_content_style" />
+
+    <com.example.administrator.mymobile.SettingItem
+        itheima:name="点击绑定SIM卡"
+        itheima:update_on="SIM卡没有绑定"
+        itheima:update_off="SIM卡已经绑定"
+        android:id="@+id/si_bind_sim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/heng8"/>
+        <!-- 此background为自定义背景按键-->
+        <Button
+            style="@style/button_previous_style"/>
+        <Button
+            style="@style/button_next_style"/>
+    </RelativeLayout>
+</LinearLayout>

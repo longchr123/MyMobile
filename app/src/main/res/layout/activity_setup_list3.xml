@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.mymobile.activity.SetupList1Activity">
+
+    <TextView android:text="3.设置安全号码"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:id="@+id/tv"/>
+
+    <TextView
+        android:text="SIM卡变更后：\n 报警短信会发给安全号码"
+        style="@style/text_content_style" />
+
+    <EditText
+        android:id="@+id/et_safe_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入安全号码"/>
+    <Button
+        android:onClick="selectContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="选择联系人"
+        android:background="#77ff77"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/presence_invisible"
+        />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/heng12"/>
+        <!-- 此background为自定义背景按键-->
+        <Button
+            style="@style/button_previous_style"/>
+        <Button
+            style="@style/button_next_style"/>
+    </RelativeLayout>
+</LinearLayout>

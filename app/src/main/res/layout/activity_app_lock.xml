@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.app.AdvancedTools.AppLockActivity">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#55ff55">
+
+        <TextView
+            android:id="@+id/tv_unlock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未加锁"
+            android:textColor="#fff"
+            android:textSize="23sp"
+            android:background="#0000ff"/>
+        <TextView
+            android:id="@+id/tv_locked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已加锁"
+            android:paddingLeft="15dp"
+            android:textColor="#fff"
+            android:textSize="23sp"
+            android:background="#0055ff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_unlock"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_unlock_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未加锁软件"
+            android:textColor="#77000000"
+            android:textSize="18sp" />
+        <ListView
+            android:id="@+id/lv_unlock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_locked"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_locked_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已加锁软件"
+            android:textColor="#77000000"
+            android:textSize="18sp" />
+        <ListView
+            android:id="@+id/lv_locked"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="25sp"
+        android:text="添加黑名单"
+        android:gravity="center"
+        android:background="#66ff6600" />
+    <EditText
+        android:hint="请输入号码"
+        android:textSize="20sp"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_black_number" />
+    <RadioGroup
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/rg_mode">
+        <RadioButton
+            android:id="@+id/rb_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电话拦截"/>
+        <RadioButton
+            android:id="@+id/rb_sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="短信拦截"/>
+        <RadioButton
+            android:id="@+id/rb_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部拦截"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:id="@+id/btn_ok" />
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:id="@+id/btn_cancel" />
+    </LinearLayout>
+
+</LinearLayout>

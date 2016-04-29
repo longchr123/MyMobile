@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MyMobile</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_setting_item">SettingItem</string>
+    <string name="server_url">http://192.168.56.1:8080/updateinfo.html</string>
+    <string name="title_activity_lost_find">LostFindActivity</string>
+    <string name="title_activity_setup_list1">SetupList1Activity</string>
+    <string name="title_activity_select_contact">SelectContactActivity</string>
+    <string name="sample_device_admin_description">这是设备管理员描述信息</string>
+    <string name="sample_device_admin">这是设备管理员标题</string>
+    <string name="title_activity_atools">AToolsActivity</string>
+    <string name="title_activity_number_address_query">NumberAddressQueryActivity</string>
+    <string name="title_activity_drag_view">DragViewActivity</string>
+    <string name="title_activity_call_sms_safe">CallSmsSafeActivity</string>
+    <string name="title_activity_app_manager">AppManagerActivity</string>
+    <string name="title_activity_task_manager">TaskManagerActivity</string>
+    <string name="title_activity_task_manager_setting">TaskManagerSettingActivity</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="title_activity_common_number_query">CommonNumberQueryActivity</string>
+    <string name="title_activity_app_lock">AppLockActivity</string>
+    <string name="title_activity_enter_other_app_pwd">EnterOtherAppPwdActivity</string>
+    <string name="title_activity_traffic_manager1">TrafficManager1Activity</string>
+    <string name="title_activity_anti_virus">AntiVirusActivity</string>
+    <string name="title_activity_clean_cache">CleanCacheActivity</string>
+    <string name="title_activity_clean_sdcard">CleanSDcardActivity</string>
+    <string name="title_activity_clean">CleanActivity</string>
+</resources>

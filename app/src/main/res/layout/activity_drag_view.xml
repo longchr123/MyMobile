@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.mymobile.activity.DragViewActivity">
+
+    <TextView android:text="按住提示框拖动到任意位置\n按手机返回键立即生效"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center_horizontal"
+        android:id="@+id/tv_top"/>
+    <TextView android:text="按住提示框拖动到任意位置\n按手机返回键立即生效"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center_horizontal"
+        android:id="@+id/tv_bottom"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"/>
+    <ImageView
+        android:id="@+id/iv_dragview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/btn_zoom_up_disabled_focused"/>
+
+</RelativeLayout>

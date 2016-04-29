@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res/com.example.administrator.mymobile"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.mymobile.activity.HomeActivity">
+
+    <TextView android:text="设置中心" android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:id="@+id/tv"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--ScrollView只能包住一个孩子，所以加一个LinearLayout-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <!-- 这个自定义控件关联了：LinearLayout中的xmlns，自定义了values中的attrs.xml
+    以及SettingItem.java中的SettingItem方法中的attrs参数-->
+    <com.example.administrator.mymobile.SettingItem
+        itheima:name="设置自动更新"
+        itheima:update_off="自动更新已经关闭"
+        itheima:update_on="自动更新已经开启"
+        android:id="@+id/si_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.example.administrator.mymobile.SettingItem
+        itheima:name="设置来电归属地显示"
+        itheima:update_off="归属地显示已经开启"
+        itheima:update_on="归属地显示已经关闭"
+        android:id="@+id/si_show_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.example.administrator.mymobile.SettingClick
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sc_change"/>
+
+    <com.example.administrator.mymobile.SettingClick
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sc_change_position"/>
+    <com.example.administrator.mymobile.SettingItem
+        itheima:name="设置黑名单拦截"
+        itheima:update_off="黑名单拦截已经开启"
+        itheima:update_on="黑名单拦截已经关闭"
+        android:id="@+id/si_black_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.example.administrator.mymobile.SettingItem
+        itheima:name="设置程序锁"
+        itheima:update_off="程序锁已经开启"
+        itheima:update_on="程序锁已经关闭"
+        android:id="@+id/si_applock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
